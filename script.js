@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const success = document.getElementById('successMessage');
 
+    const projectButtons = document.querySelectorAll('.collapsible');
+
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -23,17 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
         success.textContent = '';
 
         if (name.value.trim() === '') {
-            nameError.textContent = 'Name is required.';
+            nameError.textContent = 'Please include your name';
             isValid = false;
         }
 
         if (email.value.trim() === '') {
-            emailError.textContent = 'Email is required.';
+            emailError.textContent = 'Email is required';
             isValid = false;
         }
 
         if (comment.value.trim() === '') {
-            commentError.textContent = 'Comment is required.';
+            commentError.textContent = 'Please include your comment';
             isValid = false;
         }
     
@@ -41,4 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
             success.textContent = 'Thank you! Your comment has been submitted.';
         }
     });
+
+      projectButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+            }
+        }
+        );
+   
+      });
+    
 });
