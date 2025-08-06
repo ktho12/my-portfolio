@@ -17,15 +17,15 @@ body {
     width: 100%;
     font-size: var(--font-size-large);
     position: sticky;
-    margin: 50px 10px 50px 10px;
+    margin: 50px 0px 50px 0px;
 }
 
 .about{
     text-align: center;
     font-size: large;
-    width: 100%;
+    width: 50%;
     padding: 50px;
-    margin: 50px 10px 10px 10px;
+    margin: 50px 0px 0px 0px;
 }
 
 img {
@@ -142,7 +142,7 @@ button:hover {
     text-align: center;
     font-size: smaller;
     position: fixed;
-    padding: 10px;
+    padding: 0;
     margin: 0;
     width: 100%;
     bottom: 0ch;
