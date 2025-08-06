@@ -1,7 +1,7 @@
 :root {
-    --main-color: rgba(255, 255, 255, 0.74);
+    --main-color: rgba(5, 5, 5, 0.74);
     --font-size-large: x-large;
-    --background-color: rgba(3, 2, 1, 0.951);
+    --background-color: #FFEAE4;
 }
 
 body {
@@ -21,7 +21,12 @@ body {
     width: 100%;
     font-size: var(--font-size-large);
     position: sticky;
-    margin: 50px 0px 50px 0px;
+    margin: 0;
+}
+header img {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 ul {
@@ -29,18 +34,20 @@ ul {
     float: left;
     text-align: center;
     width: 100%;
-    margin: 10px;
+    margin: 50px 0 0 0;
     padding: 10px;
     overflow: hidden;
-    background-color: bisque;
+    background-color: #E7D7FF;
     position: fixed;
+    bottom: 0;
+    
 
 }
 
 li {
     display: inline;
-    padding: 100px;
-    border-right: 5px solid #fff;
+    padding: 20px;
+    border-right: 5px solid #FFF0F5;
     
 }
 
@@ -50,6 +57,7 @@ li:last-child {
 
 li a {
     text-decoration: none;
+    margin: 50px;
 }
 
 .about{
@@ -124,8 +132,7 @@ img {
     text-align: center;
     font-size: medium;
     width: auto;
-    padding: 50px;
-    margin: 10px;
+    padding: 20px 0 50px 0;
     
 }
 
@@ -171,13 +178,11 @@ button:hover {
 }
 
 .footer{
-    text-align: center;
+    text-align: right;
     font-size: smaller;
-    position: fixed;
-    padding: 0;
-    margin: 0;
+    padding: px;
+    margin: 50px 0 20px 0;
     width: 100%;
-    bottom: 0ch;
 }
 
 @media (max-width: 768px) {
