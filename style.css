@@ -9,6 +9,10 @@ body {
     background-color: var(--background-color);
     margin: 20px;
     color: var(--main-color);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .header {
@@ -22,21 +26,38 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: bisque;
+    position: fixed;
+
+}
+
+li {
+    display: inline;
+    padding: 100px;
+    border-right: 5px solid #fff;
+    
+}
+
+li:last-child {
+    border-right: none;
 }
 
 li a {
     text-decoration: none;
-
 }
 
 .about{
     text-align: center;
     font-size: large;
-    width: 50%;
-    padding: 50px;
-    margin: 50px 0px 0px 0px;
+    width: 100%;
+    padding: 0;
+    margin: 100px 0 0 0;
 }
 
 img {
