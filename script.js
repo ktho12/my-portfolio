@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (email.value.trim() === '') {
-            emailError.textContent = 'Email is required';
+            emailError.textContent = 'Please include your email';
             isValid = false;
         }
 

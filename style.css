@@ -12,7 +12,7 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .header {
@@ -20,8 +20,8 @@ body {
     text-align: center;
     width: 100%;
     font-size: var(--font-size-large);
-    position: sticky;
-    margin: 0;
+    position: top;
+    margin: 10px auto;
 }
 header img {
     margin: 10px;
@@ -34,12 +34,12 @@ ul {
     float: left;
     text-align: center;
     width: 100%;
-    margin: 50px 0 0 0;
+    margin: 25px 0 50px 0;
     padding: 10px;
     overflow: hidden;
     background-color: #E7D7FF;
-    position: fixed;
-    bottom: 0;
+    position: top;
+    bottom: 0ch;
     
 
 }
@@ -66,6 +66,7 @@ li a {
     width: 100%;
     padding: 0;
     margin: 100px 0 0 0;
+    overflow: hidden;
 }
 
 img {
@@ -132,6 +133,7 @@ img {
     text-align: center;
     font-size: medium;
     width: auto;
+    margin: 10px;
     padding: 20px 0 50px 0;
     
 }
@@ -139,7 +141,7 @@ img {
 form {
     width: auto;
     padding: 25px;
-    margin: 5px;
+    margin: 20px;
 
 }
 
@@ -178,10 +180,10 @@ button:hover {
 }
 
 .footer{
-    text-align: right;
+    text-align: center;
     font-size: smaller;
-    padding: px;
-    margin: 50px 0 20px 0;
+    padding: 10px;
+    margin: 20px 0 20px 0;
     width: 100%;
 }
 
