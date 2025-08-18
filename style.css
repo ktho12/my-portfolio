@@ -37,10 +37,20 @@ body.dark-mode li a {
   color: #ffffffb6;
 }
 
+body.dark-mode [id="toggle-dark"]{
+    background-color: #1e1e1e;
+    color: #ffffffb6;
+    border: 1px solid #ffffffb6;
+}
+
+body.dark-mode [id="toggle-dark"]:hover{
+    font-weight: bold;
+}
+
 [id="toggle-dark"]{
     border-radius: 25px;
     background-color: var(--background-color); 
-    font-size: 12px;
+    font-size: 15px;
     padding: 15px;
     border: 1px solid rgb(202, 162, 184);
     text-align: center;
