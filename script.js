@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isValid) {
       success.textContent = 'Thank you! Your comment has been submitted.';
     }
-  }); 
-    
-});
+  });
 
+});
