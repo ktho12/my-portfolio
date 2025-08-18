@@ -96,60 +96,6 @@ img {
     margin: 20px 10px 10px 10px;
 }
 
-.projects{
-    text-align: center;
-    font-size: large;
-    width: 100%;
-    padding: 25px;
-    margin: 40px 10px 10px 10px;
-
-}
-
-.projectOne{
-    text-align: left;
-    font-size: 20pt;
-    border-radius: 20px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 10px 0;
-    
-}
-
-[name=projOneBtn] {
-    background-color: rgb(201, 174, 189);
-    width: 20%;
-    padding: 10px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.projectTwo{
-    text-align: left;
-    font-size: 20pt;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 10px 0;
-}
-
-[name=projTwoBtn] {
-    background-color:rosybrown;
-    width: 20%;
-    padding: 10px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.content {
-  padding: 20px;
-  display: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-[id="projOneContent"], [id="projTwoContent"] {
-    font-size: 20px;
-    padding: 20px;
-}
 
 .contact{
     text-align: center;
