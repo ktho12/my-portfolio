@@ -227,10 +227,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    img{
-        height: 25%;
-        width: 25%;
-    }
 
    ul{
         flex-direction: column;
@@ -288,17 +284,29 @@ button:hover {
         width: 90vw;
   }
 
+  .contact{
+    width: 90vw;
+    display: block;
+  }
+
     [name="name"],[name="email"] {
-        display:block;
-        width:100%;
+        width:50vw;
     }
     
     [name="comment"] {
-        display: block;
-        width:200%;
+        width: 50vw;
     }
     [name="submit"] {
-        display: block;
-        width: 25%;
+        width: 50vw;
+    }
+
+    .about{
+        width: 90vw;
+        word-break: break-word;
+        align-items: center;
+    }
+
+    .about img{
+        width: 50vw;
     }
 }
