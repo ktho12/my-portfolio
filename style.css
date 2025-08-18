@@ -232,6 +232,47 @@ button:hover {
         width: 25%;
     }
 
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .flex-item{
+        flex-direction: column;
+        align-items: left;
+        gap: 0;
+    }
+
+    .flex-item img{
+        width: 90vw;
+        height: auto;
+
+        
+    }
+    .container img{
+        width: 90vw;
+        height: auto;
+        
+    }
+
+    .container .moodBtn,
+    .container .portfolioBtn {
+        padding: 15px 25px;
+        font-size: 14px;
+        position: static;  
+        transform: none;
+        width: auto;
+  }
+
+    .mood-text, .portfolio-text {
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+        width: 90vw;
+  }
+
     [name="name"],[name="email"] {
         display:block;
         width:100%;
@@ -245,9 +286,4 @@ button:hover {
         display: block;
         width: 25%;
     }
-
-    [name=projOneBtn],[name="projTwoBtn"] {
-        display: block;
-        width: 25%;
-}
 }
