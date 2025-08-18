@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const success = document.getElementById('successMessage');
 
+  const toggleBtn = document.getElementById('toggle-dark');
+  const body = document.body;
+
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -41,5 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
       success.textContent = 'Thank you! Your comment has been submitted.';
     }
   });
+
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+}
+
+  toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
 
 });
