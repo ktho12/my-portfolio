@@ -7,11 +7,13 @@
 body {
     font-family:'Times New Roman', Times, serif;
     background-color: var(--background-color);
-    margin: 20px;
+    margin: 0px;
     color: var(--main-color);
     position: relative;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    text-wrap: wrap;
     
 }
 
@@ -60,13 +62,33 @@ li a {
     margin: 50px;
 }
 
-.about{
+.grid-container{
+    display: grid;
+    gap: 10px;
+}
+
+
+.grid-container > div.about {
+    grid-area: content;
+    justify-content: center;
+    column-width: 100%;
+    
+    
+}
+
+.about {
     text-align: center;
-    font-size: large;
     width: 100%;
-    padding: 0;
-    margin: 100px 0 0 0;
-    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    text-wrap: wrap;
+}
+
+.about p{
+    width: 100%;
+    white-space: normal;
+    word-break: break-all;
+    text-wrap: wrap;
 }
 
 img {
