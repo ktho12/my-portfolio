@@ -38,8 +38,8 @@ ul {
     width: 100%;
     margin: 25px 0 50px 0;
     padding: 10px;
-    overflow: hidden;
-    background-color: #E7D7FF;
+    overflow-x: hidden;
+    background-color:rgb(202, 162, 184);
     position: top;
     bottom: 0ch;
 }
@@ -47,7 +47,8 @@ ul {
 li {
     display: inline;
     padding: 20px;
-    border-right: 5px solid #FFF0F5;    
+    border-right: 5px solid #FFF0F5;
+    font-size: 20px; 
 }
 
 li:last-child {
@@ -57,6 +58,12 @@ li:last-child {
 li a {
     text-decoration: none;
     margin: 50px;
+    color:rgba(5, 5, 5, 0.74);
+}
+
+li:hover{
+     color: black;
+     font-weight: bold;
 }
 
 .grid-container{
@@ -69,6 +76,10 @@ li a {
     grid-area: content;
     justify-content: center;
     column-width: 100%;
+}
+
+h3{
+    font-size: 40px;
 }
 
 .about {
@@ -87,6 +98,7 @@ li a {
     text-wrap: wrap;
     display: block;
     margin: 50px 0 50px 0;
+    font-size: 18px;
 }
 
 .about img {
@@ -242,6 +254,7 @@ button:hover {
         display: block;
         text-align: center;
         border-right: none;
+        font-size: 14px;
   }
 
   li a{
