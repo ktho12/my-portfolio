@@ -75,20 +75,24 @@ li a {
     text-align: center;
     width: 100%;
     white-space: normal;
-    word-break: break-all;
-    text-wrap: wrap;
+    text-wrap: balance;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .about p{
     width: 100%;
     white-space: normal;
-    word-break: break-all;
+    word-wrap: break-word;
     text-wrap: wrap;
+    display: block;
+    margin: 50px 0 50px 0;
 }
 
 .about img {
-    border-radius: 50%;
+    border-radius: 40%;
     margin: 20px 0px 10px 0px;
+
 }
 
 h2 {
@@ -230,13 +234,18 @@ button:hover {
 
    ul{
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
     }
 
     li {
-        width: 100%;
+        width: auto;
+        display: block;
         text-align: center;
         border-right: none;
+  }
+
+  li a{
+    text-decoration: none;
   }
 
     li:last-child {
@@ -301,12 +310,15 @@ button:hover {
     }
 
     .about{
-        width: 90vw;
-        word-break: break-word;
+        width: 100vw;
+        word-break: normal;
+        word-wrap: break-word;
         align-items: center;
+        text-wrap: balance;
     }
 
     .about img{
-        width: 50vw;
+        width: 25%;
+        height: 25%;
     }
 }
